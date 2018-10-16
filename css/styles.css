@@ -36,6 +36,8 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 	display: block;
 }
 #maincontent {
+	/* display: flex;
+	flex-wrap: wrap; */
   background-color: #f3f3f3;
   min-height: 100%;
 }
@@ -135,6 +137,7 @@ nav h1 a {
 #restaurants-list {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
@@ -195,7 +198,7 @@ nav h1 a {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87%;
+  height: 100%;
   position: fixed;
   right: 0;
   top: 80px;
@@ -207,7 +210,7 @@ nav h1 a {
   width: 100%;
 }
 .inside #footer {
-  bottom: 0;
+  /* bottom: 0; */
   position: absolute;
   width: 100%;
 }
@@ -240,14 +243,16 @@ nav h1 a {
   text-transform: uppercase;
 	width: 90%;
 }
+#restaurant-container {
+	padding: 140px 40px 30px;
+}
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
   width: 50%;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  padding: 0px 0px 0px 10px;
 }
 #reviews-container h2 {
   color: #f58500;
@@ -267,9 +272,9 @@ nav h1 a {
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 0 20px 20px;
+  /* padding: 0 20px 20px;
   position: relative;
-  width: 85%;
+  width: 85%; */
 }
 #reviews-list li p {
   margin: 0 0 10px;

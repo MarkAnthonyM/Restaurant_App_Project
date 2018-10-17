@@ -91,6 +91,20 @@ nav h1 a {
 	transform: translate(0, 0);
 }
 
+.skip-link {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	background: white;
+	color: black;
+	padding: 8px;
+	z-index: 100;
+}
+
+.skip-link:focus {
+	top: 0;
+}
+
 #breadcrumb {
 		display: flex;
 		flex-direction: column;
@@ -224,6 +238,12 @@ nav h1 a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+#restaurants-list li a:focus {
+	background-color: black;
+}
+#restaurants-list li a:hover {
+	background-color: black;
 }
 
 /* ====================== Restaurant Details ====================== */

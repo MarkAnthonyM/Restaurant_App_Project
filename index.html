@@ -14,24 +14,25 @@
   <header>
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
+      <a href="#skipLink" class="skip-link">Skip to main content</a>
     </nav>
   </header>
 
   <main id="maincontent">
-    <section aria-hidden="true"  id="map-container">
-      <div aria-hidden="true" id="map"></div>
+    <section id="map-container" aria-label="Map of restaurants">
+      <div id="map" aria-labelledby="map-container"></div>
     </section>
     <section>
-      <div class="filter-options">
-        <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+      <div id="skipLink" class="filter-options">
+        <h2 aria-label="filter results of restaurants">Filter Results</h2>
+        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-label="Filter restaurants by neighborhood" aria-controls="restaurants-list">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-label="Filter restaurants by cuisine" aria-controls="restaurants-list">
           <option value="all">All Cuisines</option>
         </select>
       </div>
-      <ul id="restaurants-list"></ul>
+      <ul id="restaurants-list" aria-atomic="true" role="region" aria-live="polite"></ul>
     </section>
   </main>
   <footer id="footer">

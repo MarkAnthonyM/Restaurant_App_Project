@@ -76,6 +76,7 @@
   }
 
   .hamburger-nav {
+    flex-direction: row;
     margin: 0px;
   }
 
@@ -84,5 +85,11 @@
     height: unset;
     position: static;
     transform: translate(0, 0);
+  }
+
+  #breadcrumb li+li:before {
+      padding: 8px;
+      color: white;
+      content: "/\00a0";
   }
 }

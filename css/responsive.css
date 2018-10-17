@@ -1,11 +1,88 @@
-@media screen and (min-width: 400px) {
-  
+@media screen and (min-width: 600px) {
+  body .filter-options h2 {
+    font-size: 1rem;
+  }
+
+  body .filter-options select {
+    font-size: 16px;
+  }
+
+  body #restaurants-list li {
+    margin: 20px;
+    width: 230px;
+    height: 340px
+  }
+
+  body #restaurants-list h1 {
+    font-size: 1.1rem;
+    margin: 5px 0px 0px;
+  }
+
+  body #restaurants-list p {
+    font-size: 13px;
+  }
+
+  body #restaurants-list a {
+    font-size: 15px;
+  }
 }
 
-/* @media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) {
+  body .filter-options h2 {
+    font-size: 2rem;
+  }
+
+  body .filter-options select {
+    font-size: 16px;
+  }
+
+  body #restaurants-list li {
+    margin: 20px;
+    width: 290px;
+  }
+
+  body #restaurants-list h1 {
+    font-size: 1.2rem;
+  }
+
+  body #restaurants-list p {
+    font-size: 13px;
+  }
+
+  body #restaurants-list a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #mainRestaurantContent {
+    width: 1000px;
+    margin: 0px auto 0px auto;
+  }
+}
+
+@media screen and (min-width: 1450px) {
   main {
+    width: 1450px;
     margin-left: auto;
     margin-right: auto;
-    width: 1200px
   }
-} */
+}
+
+/* Hamburger Menu nav*/
+@media screen and (min-width: 500px) {
+  .hamburger {
+    display: none;
+  }
+
+  .hamburger-nav {
+    margin: 0px;
+  }
+
+  .hamburger-container {
+    width: unset;
+    height: unset;
+    position: static;
+    transform: translate(0, 0);
+  }
+}

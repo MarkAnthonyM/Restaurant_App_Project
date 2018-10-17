@@ -36,6 +36,7 @@ self.addEventListener('install', function(event) {
 
 //fetches cached assests for offline display
 self.addEventListener('fetch', function(event) {
+  //checks request url against location origin. diverts and responds with cache match if found
   let requestUrl = new URL(event.request.url);
 
   if (requestUrl.origin === location.origin) {
@@ -45,6 +46,7 @@ self.addEventListener('fetch', function(event) {
     }
   }
 
+//checks request against cached assests. if match found, returns response, else uses request to fetch from network
   event.respondWith(
     caches.match(event.request).then(function(response) {
       if (response) {
